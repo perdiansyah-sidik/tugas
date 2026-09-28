@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>T4_074</title>
+
+    <style>
+        .button {
+            border-radius: 10px;
+            text-align: center;
+            background-color: greenyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Aplikasi Penghitung Jumlah Klik</h1>
+
+    <button onclick="hitungKlik()" class="button">Klik Saya</button>
+    <br>
+    <div style="border :5px solid green; width:100px ;display:flex;border-radius:5px;margin-top:10px">
+        <p>Jumlah klik: <span id="jumlah">0</span></p>
+    </div>
+    <script>
+
+        let jumlahKlik = 0;
+
+        function hitungKlik() {
+            jumlahKlik++;
+            document.getElementById("jumlah").textContent = jumlahKlik;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>T5_074</title>
+</head>
+
+<body>
+
+    <h1>Tombol Pengubah Warna Latar Belakang</h1>
+
+    <button onclick="ubahWarna()">Ubah Warna</button>
+
+    <script>
+
+        function ubahWarna() {
+            let warna = [
+                "red",
+                "blue",
+                "green",
+                "yellow",
+                "pink",
+                "orange",
+                "purple"
+            ];
+
+            let angka = Math.floor(Math.random() * warna.length);
+
+            document.body.style.backgroundColor = warna[angka];
+        }
+
+    </script>
+
+</body>
+</html>
